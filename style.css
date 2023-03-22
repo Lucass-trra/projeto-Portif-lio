@@ -1,0 +1,571 @@
+body {
+    background-image: linear-gradient(#232526, #232526);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    margin-bottom: 6%;
+    border:#232526;
+}
+
+/* configurando meu header */
+header {
+    height: 75px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+@keyframes mudancaFundoCabecalho {
+    0% {
+        background-color: #6e1c1c;
+    }
+
+    50% {
+        background-color: #843c3c;
+    }
+
+    100% {
+        background-color: #6e1c1c;
+    }
+}
+.cabecalhoFundo {
+    transition: 1s ease-in-out;
+    animation: mudancaFundoCabecalho 10s ease infinite ;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.classAncora {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header ul#ancoras {
+    display: flex;
+    justify-content: end;
+
+}
+
+header ul#ancoras a {
+    color: aliceblue;
+    margin-left: 1%;
+    margin-right: 2%;
+    text-decoration: none;
+    list-style: none;
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+@keyframes Ancora {
+    50% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(20%);
+    }
+}
+
+header ul#ancoras a li:hover {
+    animation: Ancora .2s ease-in-out;
+    border-bottom: 3px solid #DA4453;
+}
+
+
+/* configurando meu about */
+
+main div#about {
+    margin-top: -4%;
+    margin-bottom:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+
+main div#about h1#titulo1 {
+    font-size: 75px;
+    margin-bottom: -8%;
+}
+
+main div#about h1#titulo3 {
+    background-color: #DA4453;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+main div#about h1#tituloAbout {
+    align-self:flex-start;
+    margin-left: 12%;
+    margin-top: 6%;
+    font-style: italic;
+    font-size: 40px;
+    border-bottom: 3px solid #DA4453;
+}
+
+
+main div#about div#descricao {
+    width: 75%;
+    height: 200px;
+    margin-top: 1%;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-size: xx-large;
+    border-radius: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #DA4453 #232526;
+}
+
+/* configurando os cards dos serviços */
+main div#servicos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    width: 100%;
+}
+
+main h1#tituloServico {
+    display: inline;
+    margin-left: 12%;
+    font-size: 40px;
+    color: aliceblue;
+    letter-spacing: 4px;
+    font-style: italic;
+    border-bottom:3px solid #DA4453;
+}
+
+@keyframes animacaoFigurasCard {
+    50% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20%);
+    }
+}
+
+/* editando o 1°card dos meus serviços (GIT) */
+main div#servicos div#serv1 {
+    display: flex;
+    margin-left: 2%;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height:350px;
+    background-image:linear-gradient(to top,#6e1c1c,#DA4453);
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+main div#servicos div#serv1 img {
+    margin-top: 10%;
+    width:30%;
+}
+
+main div#servicos div#serv1 h2 {
+    font-size: xx-large;
+    margin-bottom: -1%;
+    font-family:fantasy;
+    color:#232526;
+}
+
+main div#servicos div#serv1 p { 
+    font-size: large;
+    color:aliceblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* editando o 2°card dos meus serviços (JavaScript) */
+main div#servicos div#serv2 {
+    display: flex;
+    margin-left: 2%;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height:350px;
+    background-image:linear-gradient(to top,#6e1c1c,#DA4453);
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+main div#servicos div#serv2 img {
+    margin-top: 10%;
+    width:30%;
+}
+
+main div#servicos div#serv2 h2 {
+    font-size: xx-large;
+    margin-bottom: -1%;
+    font-family:fantasy;
+    color:#232526;
+}
+
+main div#servicos div#serv2 p { 
+    font-size: large;
+    color:aliceblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* editando o 3°card dos meus serviços (CSS) */
+main div#servicos div#serv3 {
+    display: flex;
+    margin-left: 2%;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height:350px;
+    background-image:linear-gradient(to top,#6e1c1c,#DA4453);
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+main div#servicos div#serv3 img {
+    margin-top: 10%;
+    width:30%;
+}
+
+main div#servicos div#serv3 h2 {
+    font-size: xx-large;
+    margin-bottom: -1%;
+    font-family:fantasy;
+    color:#232526;
+}
+
+main div#servicos div#serv3 p { 
+    font-size: large;
+    color:aliceblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sub_Titulo_Servico {
+    transition: .5s ease-in-out;
+}
+
+/* editando o 4°card dos meus serviços (HTML) */
+main div#servicos div#serv4 {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height:350px;
+    background-image:linear-gradient(to top,#6e1c1c,#DA4453);
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+main div#servicos div#serv4 img {
+    margin-top: 10%;
+    width:30%;
+}
+
+main div#servicos div#serv4 h2 {
+    font-size: xx-large;
+    margin-bottom: -1%;
+    font-family:fantasy;
+    color:#232526;
+}
+
+main div#servicos div#serv4 p { 
+    font-size: large;
+    color:aliceblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* criando a aba de portifólio */
+main div#portifolio {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1#tituloPortifófio {
+    display: inline;
+    margin-left: 12%;
+    font-size: 40px;
+    color: aliceblue;
+    letter-spacing: 4px;
+    font-style: italic;
+    border-bottom:3px solid #DA4453;
+}
+
+/* criando o 1°card da aba portifólio */
+main div#portifolio div#port1 {
+    display: flex;
+    flex-direction: row;
+    border: transparent;
+    border-left: 10px #DA4453;
+    border-right: 10px #DA4453;
+    box-shadow:8px 8px 8px 8px rgb(29, 27, 27);
+    border-style:inset;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    align-self: flex-start;
+    border-radius: 30px;
+    width: 30%;
+    height: 300px;
+}
+
+main div#portifolio div#port1:hover {
+    transition: .5s ease-in;
+    width: 95%;
+    
+}
+
+.sub_container_portifolio {
+    transition: .5s ease-out;
+}
+
+main div#portifolio div#port1 img {
+    border-radius: 15px;
+    width: 405px;
+    height: 300px;
+}
+
+
+main div#portifolio div#port1 div#resumoPort1{
+    display: flex;
+    
+    flex-direction: column;
+    text-align: center;
+}
+
+main div#portifolio div#port1 div#resumoPort1 div#scrollResumo {
+    overflow-y:scroll;
+    scrollbar-color: #883941 #232526;
+    scrollbar-width: thin;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+main div#portifolio div#port1 div#resumoPort1 h2 {
+    font-size: 50px;
+    font-family: fantasy;
+    letter-spacing: 4px;
+    color: gold;    
+}
+
+main div#portifolio div#port1 div#resumoPort1 p {
+    font-size: x-large;
+    color: aliceblue;
+}
+
+/* criando o 2°card da aba portifólio*/
+main div#portifolio div#port2 {
+    display: flex;
+    flex-direction: row;
+    border: transparent;
+    border-right: 10px #DA4453;
+    border-left: 10px #DA4453;
+    box-shadow:10px 10px 10px 10px rgb(29, 27, 27); 
+    border-style:outset;
+    margin-right: 2%;
+    align-self: flex-end;
+    border-radius: 30px;
+    width: 30%;
+    height: 300px;
+}
+
+main div#portifolio div#port2:hover {
+    transition: .5s ease-in;
+    width: 95%;
+}
+
+
+
+main div#portifolio div#port2 img {
+    border-radius: 15px;    
+    width: 405px;
+    height: 300px;
+}
+
+
+main div#portifolio div#port2 div#resumoPort2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main div#portifolio div#port2 div#resumoPort2 div#scrollResumo2 {
+    overflow-y:scroll;
+    scrollbar-color: #883941 #232526;
+    scrollbar-width: thin;
+    margin-left: 5%;
+    margin-right: 5%; 
+}
+
+main div#portifolio div#port2 div#resumoPort2 h2 {
+    font-size: 50px;
+    font-family: fantasy;
+    letter-spacing: 4px;
+    color: gold;    
+}
+
+main div#portifolio div#port2 div#resumoPort2 p {
+    font-size: x-large;
+    color: aliceblue;
+}
+
+
+/* criando a aba de contato */
+/* desenvolvendo os links das redes socias */
+
+body h1#tituloContato {
+    display: inline;
+    margin-left: 12%;
+    font-size: 40px;
+    color: aliceblue;
+    letter-spacing: 4px;
+    font-style: italic;
+    border-bottom:3px solid #DA4453;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+    align-items: flex-start;
+    width: 75%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul a  {
+    width: 10%;
+    height: 100px;
+    margin-left: 4%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px 5px black;
+    background-image:linear-gradient(to top,#6e1c1c,#DA4453);
+}
+
+footer ul a:hover {
+    transition: .5s ease-in-out;
+    width: 12%;
+    height: 120px;
+}
+
+footer ul a li{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+footer ul a li img {
+    width: 45%;
+}
+
+footer ul a#GitHub li#ListaGit img#gitImage {
+    width: 60%;
+}
+
+/* desenvolvendo a a comunicação por email*/
+footer form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    align-items: flex-start;
+}
+
+footer form h2 {
+    color: aliceblue;
+    font-family: fantasy;
+    font-size: x-large;
+    font-style: italic;
+    margin-bottom: 10%;
+}
+
+footer form h2 span {
+    animation: mudancaFundoCabecalho 5s ease infinite ;
+    border-radius: 30px;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+footer form input {
+    padding: 3%;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 4%;
+    background-color: rgb(222, 222, 222);
+    box-shadow: 2px 2px 20px 5px black;
+    width: 50%;
+}
+
+footer form textarea {
+    background-color: rgb(222, 222, 222);
+    box-shadow: 2px 2px 20px 5px black;
+    font-size: x-large;
+    scrollbar-color: #DA4453 rgb(222, 222, 222);
+    scrollbar-width: thin;
+    font-weight: bolder;
+    border-radius: 15px;
+    padding: 3%;
+    margin-bottom: 3%;
+}
+
+footer form button {
+    border: 2px solid black;
+    box-shadow: 2px 2px 20px 2px black;
+    width: 25%;
+    color: aliceblue;
+    font-size:large;
+    letter-spacing: 5px;
+    font-family: fantasy;
+    font-weight: bolder;
+    padding: 3%;
+    background-image: linear-gradient(to right,#DA4453,#6e1c1c,#862f38,#b3303d,#f28c95);
+    background-size: 500%;
+    transition: .8s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+footer form button:hover {
+    background-position: right;
+}
+
+
+
+
+
