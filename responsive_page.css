@@ -1,4 +1,39 @@
+/* editando largura e altura máxima, menores escalas */
 @media (max-width: 800px) {
+    /* seção dos serviços (800px) */
+    main div#servicos div#serv1 p {
+        font-size:medium;
+        text-align: start;
+        margin-left: 6%;
+    }
+    main div#servicos div#serv2 p {
+        font-size:medium;
+        text-align: start;
+        margin-left: 6%;
+    }
+    main div#servicos div#serv3 p {
+        font-size:medium;
+        text-align: start;
+        margin-left: 6%;
+    }
+    main div#servicos div#serv4 p {
+        font-size:medium;
+        text-align: start;
+        margin-left: 6%;
+    }
+
+    /* seção dos contatos (800px) */
+    footer ul a:hover {  
+        transition: .5s ease-in-out;
+        width: 140%;
+        height: 100px;
+    } 
+
+    footer ul a {
+        width: 150px;
+    }
+
+
     footer form textarea {
         width: 100%;
     }
@@ -18,6 +53,28 @@
 }
 
 @media (max-width:1000px){
+    /* seção dos serviços (1000px) */
+    main div#servicos div#serv1 h2 {
+        font-size:x-large;
+        
+    }
+    main div#servicos div#serv2 h2 {
+        font-size:x-large;
+    }
+
+    main div#servicos div#serv3 h2{
+        font-size:x-large;
+       
+    }
+    main div#servicos div#serv4 h2 {
+        font-size:x-large;
+    }
+
+    main div#servicos div#serv2 h2 span {
+        display: block;
+    }
+
+    /* seção dos contatos (1000px) */
     footer ul a {
         width: 100%;
         height: 90px;
@@ -25,7 +82,33 @@
 }
 
 @media (max-width:660px) {
-    footer ul a:hover {
+    /* seção serviços (660px) */
+    main div#servicos {
+        flex-direction: column;
+    }
+    main div#servicos div#serv2 h2 span {
+        display: inline;
+    }
+
+    main div#servicos div#serv1 {
+        width: 75%;
+        margin-bottom: 8%;
+    }
+    main div#servicos div#serv2 {
+        width: 75%;
+        margin-bottom: 8%;
+    }
+    main div#servicos div#serv3 {
+        width: 75%;
+        margin-bottom: 8%;
+    }
+    main div#servicos div#serv4 {
+        width: 75%;
+        margin-bottom: 8%;
+    }
+
+    /* seção dos contatos (660px) */
+    footer ul a:hover {  
         transition: .5s ease-in-out;
         width: 150%;
         height: 60px;
@@ -50,6 +133,7 @@
 }
 
 @media (max-width:450px) {
+    /* seção contatos (450px) */
     footer ul a:hover {
         transition: .5s ease-in-out;
         width: 120%;
@@ -63,7 +147,9 @@
     }
 
     footer form button {
-        width: 30%;
+        width: 35%;
+        font-size: small;
+        font-weight: bolder;
         margin-left: -33px;
     }
 
@@ -75,7 +161,7 @@
 
     footer ul a {
         width: 100%;
-        height: 40px;
+        height: 35px;
     }
 
     footer form h2 {
@@ -83,6 +169,13 @@
     }
 
     footer form h2 span {
-        font-size: small;
+        font-size: x-small;
+    }
+}
+
+@media (max-width:300px) {
+    /* seção dos serviços (300px) */
+    main div#servicos div#serv2 h2 span {
+        display: block;
     }
 }

@@ -24,7 +24,11 @@ var itemListaLink = document.getElementsByClassName("itemListaLink");
 for(let i = 0; i < conteinerServico.length; i++) {
     conteinerServico[i].addEventListener("mouseover",function() {
        imagemServico[i].setAttribute("style","animation: animacaoFigurasCard 1s ease-in-out infinite;");
-       sub_Titulo_Servico[i].setAttribute("style","color:gold; font-size:40px; letter-spacing:5px;");
+       if(sub_Titulo_Servico[i].innerHTML === "JavaScript") {
+            sub_Titulo_Servico[i].setAttribute("style","color:gold; font-size:25px; letter-spacing:5px;");
+       } else {
+            sub_Titulo_Servico[i].setAttribute("style","color:gold; font-size:30px; letter-spacing:5px;");
+       }
     });
 
     conteinerServico[i].addEventListener("mouseout",function() {
