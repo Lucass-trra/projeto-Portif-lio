@@ -82,6 +82,11 @@
 }
 
 @media (max-width:660px) {
+    /* seção sobre (660px) */
+    main div#about div#descricao {
+        font-size: x-large;
+    }
+
     /* seção serviços (660px) */
     main div#servicos {
         flex-direction: column;
@@ -133,6 +138,35 @@
 }
 
 @media (max-width:450px) {
+    /* cabeçalho (450px) */
+    header ul#ancoras a {
+        font-size: medium;
+    }
+
+    /* titulos apresentação da seção sobre */
+    main div#about h1#titulo1 {
+        font-size: 45px;
+    }
+
+    main div#about h1#titulo2 {
+        font-size: 30px;
+    }
+
+    main div#about h1#titulo3 {
+        font-size: 30px;
+    }
+
+    /* titulos das seções */
+    main h1#tituloServico {
+        font-size: xx-large;
+    }
+    main h1#tituloPortifófio {
+        font-size: xx-large;
+    }
+    main div#about h1#tituloAbout {
+        font-size: xx-large;
+    }
+
     /* seção contatos (450px) */
     footer ul a:hover {
         transition: .5s ease-in-out;
@@ -174,6 +208,42 @@
 }
 
 @media (max-width:300px) {
+    /* cabeçalho (300px) */
+    header ul#ancoras a {
+        font-size: x-small;
+    }
+
+    main div#about div#descricao {
+        font-size: large;
+    }
+
+    /* titulos apresentação da seção sobre */
+    main div#about h1#titulo1 {
+        font-size: 30px;
+    }
+
+    main div#about h1#titulo2 {
+        font-size: 15px;
+    }
+
+    main div#about h1#titulo3 {
+        font-size: 20px;
+    }
+
+    /* titulos das seções */
+
+    main h1#tituloServico {
+        font-size: x-large;
+    }
+    main h1#tituloPortifófio {
+        font-size: x-large;
+    }
+    main div#about h1#tituloAbout {
+        font-size: x-large;
+    }
+    
+
+
     /* seção dos serviços (300px) */
     main div#servicos div#serv2 h2 span {
         display: block;
