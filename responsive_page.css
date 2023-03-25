@@ -1,4 +1,37 @@
 /* editando largura e altura máxima, menores escalas */
+
+@media (max-width:1350px) {
+    /* portifólio 1 */
+    main div#portifolio div#port1 {
+         max-height: 250px;  
+    }
+
+    main div#portifolio div#port1 a {
+        width: 200%;
+    }
+
+    main div#portifolio div#port1 a img#imagemPort1{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* portifólio 2 */
+    main div#portifolio div#port2 {
+         max-height: 250px;  
+         
+    }
+
+    main div#portifolio div#port2 a {
+        width: 200%;
+    }
+
+    main div#portifolio div#port2 a img#imagemPort2{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
 @media (max-width: 800px) {
     /* seção dos serviços (800px) */
     main div#servicos div#serv1 p {
@@ -21,6 +54,9 @@
         text-align: start;
         margin-left: 6%;
     }
+
+    /* seção do portifólio (800px) */
+   
 
     /* seção dos contatos (800px) */
     footer ul a:hover {  
@@ -112,6 +148,67 @@
         margin-bottom: 8%;
     }
 
+    /* seção do portifólio (660px) */
+    /* port1*/
+    main div#portifolio div#port1 {  
+        flex-direction: column-reverse;
+        align-self: center;
+        width: 75%;
+        max-height: 20%;        
+   }
+
+    main div#portifolio div#port1 div#resumoPort1{
+        overflow-y:scroll;
+    }
+
+    main div#portifolio div#port1 div#resumoPort1 h2 {
+        font-size: 200%;
+    }
+
+   main div#portifolio div#port1 a{
+        width: 100%;
+   }
+
+   main div#portifolio div#port1 a img{
+        width: 100%;
+   }
+
+   main div#portifolio div#port1:hover {
+        transition: .5s ease-in-out;
+        height: 700px;
+        width: 75%;  
+   }
+
+   /* port2 */
+   main div#portifolio div#port2 {  
+    flex-direction: column-reverse;
+    align-self: center;
+    width: 75%;
+    max-height: 20%;        
+}
+
+main div#portifolio div#port2 div#resumoPort2{
+    overflow-y:scroll;
+}
+
+main div#portifolio div#port2 div#resumoPort2 h2 {
+    font-size: 200%;
+}
+
+main div#portifolio div#port2 a{
+    width: 100%;
+}
+
+main div#portifolio div#port2 a img{
+    width: 100%;
+}
+
+main div#portifolio div#port2:hover {
+    transition: .5s ease-in-out;
+    height: 700px;
+    width: 75%;  
+}
+
     /* seção dos contatos (660px) */
     footer ul a:hover {  
         transition: .5s ease-in-out;
@@ -165,6 +262,11 @@
     }
     main div#about h1#tituloAbout {
         font-size: xx-large;
+    }
+
+    /* titulo do portifólio 1 (450px) */
+    main div#portifolio div#port1 div#resumoPort1 h2 {
+        font-size: 150%;
     }
 
     /* seção contatos (450px) */
@@ -231,7 +333,6 @@
     }
 
     /* titulos das seções */
-
     main h1#tituloServico {
         font-size: x-large;
     }
@@ -241,11 +342,19 @@
     main div#about h1#tituloAbout {
         font-size: x-large;
     }
-    
-
 
     /* seção dos serviços (300px) */
     main div#servicos div#serv2 h2 span {
         display: block;
     }
+
+    /* titulo e parágrafo do portifólio 1 (300px) */
+    main div#portifolio div#port1 div#resumoPort1 h2 {
+        font-size: 130%;
+    }
+
+    main div#portifolio div#port1 div#resumoPort1 div#scrollResumo p {
+        font-size: large;
+    }
+ 
 }
