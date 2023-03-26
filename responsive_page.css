@@ -30,6 +30,10 @@
         max-height: 100%;
     }
 
+    footer form input {
+        min-width: 45%;
+        font-size: small;
+    }
 }
 
 @media (max-width: 800px) {
@@ -232,6 +236,16 @@ main div#portifolio div#port2:hover {
     footer form h2 span {
         font-size: medium;
     }
+
+    footer form textarea {
+        width: 75%;
+        margin-left: -35px;
+        height: 170px;
+    }
+
+    footer form input {
+        margin-left: -35px;
+    }
 }
 
 @media (max-width:450px) {
@@ -277,7 +291,7 @@ main div#portifolio div#port2:hover {
     }
 
     footer form input {
-        max-width: 50%;
+        min-width: 30%;
         margin-left: -35px;
         font-size: x-small;
     }
@@ -290,9 +304,9 @@ main div#portifolio div#port2:hover {
     }
 
     footer form textarea {
-        width: 100%;
+        width: 75%;
         margin-left: -35px;
-        height: 200px;
+        height: 150px;
     }
 
     footer ul a {
@@ -355,6 +369,42 @@ main div#portifolio div#port2:hover {
 
     main div#portifolio div#port1 div#resumoPort1 div#scrollResumo p {
         font-size: large;
+    }
+
+    /* seção contatos */
+    footer form h2 span {
+        font-size: xx-small;
+    }
+
+    footer ul a {
+        width: 33px;
+        height: 35px;
+    }
+
+    footer ul {
+        margin-left: -20%; 
+    }
+
+    footer form input {
+        font-size: xx-small;
+        margin-left: 25%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    footer form button {
+        width: 35%;
+        font-size: small;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        margin: auto;
+    }
+
+    footer form textarea {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 5%;
+        height: 100px;
     }
  
 }
