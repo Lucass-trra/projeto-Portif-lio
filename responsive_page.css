@@ -1,5 +1,4 @@
-/* editando largura e altura máxima, menores escalas */
-
+/*------ editando largura e altura máxima, menores escalas --------- */
 @media (max-width:1350px) {
     /* portifólio 1 */
     main div#portifolio div#port1 {
@@ -406,5 +405,7 @@ main div#portifolio div#port2:hover {
         margin-bottom: 5%;
         height: 100px;
     }
- 
 }
+
+/*------ editando largura e altura minima, maiores escalas --------- */
+
